@@ -7,26 +7,26 @@
 	https://github.com/FCOO
 
 ****************************************************************************/
-.popover.popover-topleft:before, .popover.popover-topleft:after, .popover.popover-bottomleft:before, .popover.popover-bottomleft:after {
+div.popover.popover-topleft:before, div.popover.popover-topleft:after, div.popover.popover-bottomleft:before, div.popover.popover-bottomleft:after {
   left: calc(100% -  17px); }
 
-.popover.popover-topright:before, .popover.popover-topright:after, .popover.popover-bottomright:before, .popover.popover-bottomright:after {
+div.popover.popover-topright:before, div.popover.popover-topright:after, div.popover.popover-bottomright:before, div.popover.popover-bottomright:after {
   left: 17px; }
 
-.popover.popover-lefttop:before, .popover.popover-lefttop:after, .popover.popover-righttop:before, .popover.popover-righttop:after {
+div.popover.popover-lefttop:before, div.popover.popover-lefttop:after, div.popover.popover-righttop:before, div.popover.popover-righttop:after {
   top: calc(100% - 17px); }
 
-.popover.popover-leftbottom:before, .popover.popover-leftbottom:after, .popover.popover-rightbottom:before, .popover.popover-rightbottom:after {
+div.popover.popover-leftbottom:before, div.popover.popover-leftbottom:after, div.popover.popover-rightbottom:before, div.popover.popover-rightbottom:after {
   top: 17px; }
 
-.popover.popover-topleft, .popover.popover-bottomleft {
+div.popover.popover-topleft, div.popover.popover-bottomleft {
   margin-left: 17px; }
 
-.popover.popover-topright, .popover.popover-bottomright {
+div.popover.popover-topright, div.popover.popover-bottomright {
   margin-left: -17px; }
 
-.popover.popover-lefttop, .popover.popover-righttop {
+div.popover.popover-lefttop, div.popover.popover-righttop {
   margin-top: 17px; }
 
-.popover.popover-leftbottom, .popover.popover-rightbottom {
+div.popover.popover-leftbottom, div.popover.popover-rightbottom {
   margin-top: -17px; }

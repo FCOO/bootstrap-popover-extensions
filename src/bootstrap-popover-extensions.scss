@@ -23,7 +23,7 @@
 $popover-margin: 6px + $popover-arrow-outer-width;
 
 
-.popover {
+div.popover {
     //Adjust the position of the arrow (:before and :after)
     &.popover-topleft,       
     &.popover-bottomleft  { &:before, &:after { left: calc(100% -  #{$popover-margin }); } }
