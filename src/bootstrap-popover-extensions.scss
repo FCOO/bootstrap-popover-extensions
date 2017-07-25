@@ -1,0 +1,53 @@
+/****************************************************************************
+	bootstrap-popover-extensions.scss, 
+
+	(c) 2017, FCOO
+
+	https://github.com/FCOO/bootstrap-popover-extensions
+	https://github.com/FCOO
+
+****************************************************************************/
+
+//MODERNIZR-MIXIN - https://github.com/danielguillan/modernizr-mixin
+@import "../bower_components/modernizr-mixin/stylesheets/modernizr";
+
+//MATHSASS - https://github.com/terkel/mathsass
+@import "../bower_components/mathsass/dist/math";
+
+//BOOTSTRAP VARIABLES - 
+@import "../bower_components/bootstrap/scss/variables";
+
+
+
+//6px = distance between the edge of the element and the popover
+$popover-margin: 6px + $popover-arrow-outer-width;
+
+
+.popover {
+    //Adjust the position of the arrow (:before and :after)
+    &.popover-topleft,       
+    &.popover-bottomleft  { &:before, &:after { left: calc(100% -  #{$popover-margin }); } }
+    &.popover-topright,
+    &.popover-bottomright { &:before, &:after { left: $popover-margin; } }
+
+    &.popover-lefttop,
+    &.popover-righttop    { &:before, &:after { top: calc(100% - #{$popover-margin} ); } }
+
+    &.popover-leftbottom,
+    &.popover-rightbottom { &:before, &:after { top: $popover-margin; } }
+
+
+    //Adjust the position of the popover
+    &.popover-topleft,       
+    &.popover-bottomleft  { margin-left: $popover-margin; } 
+
+    &.popover-topright,
+    &.popover-bottomright { margin-left: -$popover-margin; }
+
+    &.popover-lefttop,
+    &.popover-righttop    { margin-top: $popover-margin; } 
+
+    &.popover-leftbottom,
+    &.popover-rightbottom { margin-top: -$popover-margin; } 
+
+}

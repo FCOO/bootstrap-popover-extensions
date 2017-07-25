@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="da" style="font-size: 100%">
+<head>
+	<title>fcoo.dk - bootstrap-popover-extensions - Demo</title>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv='x-dns-prefetch-control' content='on'>
+
+	<meta name='copyright' content='FCOO'>
+	<meta name='owner' content='FCOO'>
+
+  <link  href="bootstrap.css" rel="stylesheet">	
+  <link  href="../src/bootstrap-popover-extensions.css" rel="stylesheet">	
+</head>
+
+<body>
+
+
+	
+	
+	<script src="bower_components.js"></script>
+	<script src="../src/bootstrap-popover-extensions.js"></script>
+	<script>
+        function content(){
+            var result = '';
+            for (var i=0; i<50*Math.random(); i++ )
+                result += '=';
+            for (var i=0; i<20*Math.random(); i++ )
+                result += '<br>'+i;
+            return result;     
+       }
+            
+
+        var placements = ["bottomleft", "bottom", "bottomright", "lefttop", "left", "leftbottom", "righttop", "right", "rightbottom", "topleft", "top", "topright" ];
+
+        for (var i=0; i<placements.length; i++ )
+            $button = $('<button/>')
+                .text(placements[i])
+                .css({position: 'absolute', left:200, top:50 + i*70, height:(25+i*4)+'px'})
+                .appendTo( $('body') )
+                .popover({
+                    trigger  : 'click',
+                    placement: placements[i],
+                    html     : true,
+                    title    : placements[i],
+                    content  : content
+                })
+	</script>
+</body>
+</html>
