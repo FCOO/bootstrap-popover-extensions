@@ -1,12 +1,12 @@
 {
-  "name": "bootstrap-tooltip-extensions",
-  "version": "0.0.1",
-  "homepage": "https://github.com/FCOO/bootstrap-tooltip-extensions",
+  "name": "bootstrap-popover-extensions",
+  "version": "0.1.0",
+  "homepage": "https://github.com/FCOO/bootstrap-popover-extensions",
   "author": "NielsHolt nho@fcoo.dk",
   "description": "package.json is only use for building the package. see bower.json for more info",
   "repository": {
     "type": "git",
-    "url": "git://github.com/FCOO/bootstrap-tooltip-extensions.git"
+    "url": "git://github.com/FCOO/bootstrap-popover-extensions.git"
   },
   "dependencies": {
     "grunt": "^0.4.0",

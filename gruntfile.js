@@ -1,7 +1,7 @@
 /***********************************************
-gruntfile.js for bootstrap-tooltip-extensions
+gruntfile.js for bootstrap-popover-extensions
 
-https://github.com/FCOO/bootstrap-tooltip-extensions
+https://github.com/FCOO/bootstrap-popover-extensions
 
 ***********************************************/
 

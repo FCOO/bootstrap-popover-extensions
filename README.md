@@ -3,7 +3,7 @@
 
 
 ## Description
-Extensions to Bootstrap 4 tooltips to allow 8 more positions (eq. "topleft")
+Extensions to Bootstrap 4 Popover to allow 8 more positions (eq. "topleft")
 
 ## Installation
 ### bower
@@ -16,19 +16,26 @@ http://FCOO.github.io/bootstrap-popover-extensions/demo/
 
 ## Usage
 
-<!-- 
-### options
-| Id | Type | Default | Description |
-| :--: | :--: | :-----: | --- |
-| options1 | boolean | true | If <code>true</code> the ... |
-| options2 | string | null | Contain the ... |
+    $('mySelection').popover({
+        header: "This is a header",
+        content: "This is the content",
+        placement: "topleft"
+    })
 
-### Methods
+### `options.placement`
+There are 12 different placement for the popover:
+#### Over the element
+ `"topleft"`, `"top"`, `"topright"`
 
-    .methods1( arg1, arg2,...): Do something
-    .methods2( arg1, arg2,...): Do something else
+#### Under the element
+ `"bottomleft"`, `"bottom"`, `"bottomright"`
 
- -->
+#### Left of the element
+ `"lefttop"`, `"left"`, `"leftbottom"`
+
+#### Right of the element
+ `"righttop"`, `"right"`, `"rightbottom"`
+
 
 ## Copyright and License
 This plugin is licensed under the [MIT license](https://github.com/FCOO/bootstrap-popover-extensions/LICENSE).
@@ -40,4 +47,3 @@ Copyright (c) 2017 [FCOO](https://github.com/FCOO)
 Niels Holt nho@fcoo.dk
 
 
-## Credits and acknowledgements
