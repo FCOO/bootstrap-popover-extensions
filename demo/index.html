@@ -10,7 +10,7 @@
 	<meta name='owner' content='FCOO'>
 
   <link  href="bootstrap.css" rel="stylesheet">	
-  <link  href="../src/bootstrap-popover-extensions.css" rel="stylesheet">	
+
 </head>
 
 <body>
@@ -22,9 +22,10 @@
 	<script src="../src/bootstrap-popover-extensions.js"></script>
 	<script>
         function content(){
-            var result = '';
-            for (var i=0; i<50*Math.random(); i++ )
-                result += '=';
+            var width = Math.round( 100 + 100*Math.random() );
+            var result = '<div style="background-color:red; width:'+width+'px">'+width+'</div>';
+            //for (var i=0; i<100*Math.random(); i++ )
+            //    result += '=';
             for (var i=0; i<20*Math.random(); i++ )
                 result += '<br>'+i;
             return result;     
@@ -36,7 +37,7 @@
         for (var i=0; i<placements.length; i++ )
             $button = $('<button/>')
                 .text(placements[i])
-                .css({position: 'absolute', left:200, top:50 + i*70, height:(25+i*4)+'px'})
+                .css({position: 'absolute', left:400, top:50 + i*70, height:(25+i*4)+'px'})
                 .appendTo( $('body') )
                 .popover({
                     trigger  : 'click',

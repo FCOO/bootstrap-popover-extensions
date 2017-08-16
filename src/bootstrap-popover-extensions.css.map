@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;;;;;;;;6EAQ6E;AAoBjD,sIAAkB;EAAE,IAAI,EAAE,kBAAiC;;AAE3D,0IAAkB;EAAE,IAAI,EARnC,IAAgC;;AAWrB,kIAAkB;EAAE,GAAG,EAAE,kBAAgC;;AAGzD,8IAAkB;EAAE,GAAG,EAdlC,IAAgC;;AAkB7C,qDACsB;EAAE,WAAW,EAnBtB,IAAgC;;AAqB7C,uDACsB;EAAE,WAAW,EAAE,KAAgB;;AAErD,mDACsB;EAAE,UAAU,EAzBrB,IAAgC;;AA2B7C,yDACsB;EAAE,UAAU,EAAE,KAAgB",
-"sources": ["bootstrap-popover-extensions.scss"],
-"names": [],
-"file": "bootstrap-popover-extensions.css"
-}
