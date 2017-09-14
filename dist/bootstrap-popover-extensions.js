@@ -22,7 +22,7 @@
     /****************************************************
     Overwrite Popover.show to save and modify new positions
     *****************************************************/
-    $.fn.popover.Constructor.prototype.show = function( _show ){
+    $.fn.tooltip.Constructor.prototype.show = function( _show ){
         return function(){
             //If first time: Save 'true' placement
             if (!this.config.truePlacement){
@@ -34,32 +34,37 @@
             _show.apply(this, arguments);
 
             //Adjust popover
-            var $tip       = $(this.tip),
-                arrowDim   = $tip.find('.arrow').width() || 10,
+            var $tip        = $(this.tip),
+                arrowDim    = $tip.find('.arrow').width() || 10,
                 arrowOffset = 6 + arrowDim,
-                halfWidth  = $tip.width() / 2,
-                halfHeight = $tip.height() / 2,
-                offset     = 0;
+                offset      = 0,
+                sign        = 0;
+
+
 
             switch (this.config.truePlacement){
-                case "topleft"    : 
-                case "bottomleft" : offset = -halfWidth + arrowOffset; break;
+                case 'topright'   :
+                case 'rightbottom':
+                case 'bottomright':
+                case 'leftbottom' : sign = +1; break;
 
-                case "topright"   :
-                case "bottomright": offset =  halfWidth - arrowOffset; break;
+                case 'topleft'    :
+                case 'righttop'   :
+                case 'bottomleft' :
+                case 'lefttop'    : sign = -1; break;
 
-              
-                case "lefttop"    :
-                case "righttop"   : offset = -halfHeight + arrowOffset; break;
+                default           : sign = 0;
+            }
 
-                case "leftbottom": 
-                case "rightbottom": offset =  halfHeight - arrowOffset; break;
+            switch (sign) {
+                case +1: offset = `+50%p - ${arrowOffset}px`; break;
+                case -1: offset = `-50%p + ${arrowOffset}px`; break;
+                default: offset = 0;
             }
 
             this._popper.modifiers[1].offset = offset;
         };
 
-    }( $.fn.popover.Constructor.prototype.show );
-    
-   
+    }( $.fn.tooltip.Constructor.prototype.show );
+
 }(jQuery, this, document));
