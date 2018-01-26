@@ -1,5 +1,5 @@
 /****************************************************************************
-	bootstrap-popover-extensions.js, 
+	bootstrap-popover-extensions.js,
 
 	(c) 2017, FCOO
 
@@ -10,7 +10,7 @@
 
 (function ($/*, window, document, undefined*/) {
 	"use strict";
-	
+
     //Concert from all new placement to original
     var truePlacement2placement = {
             topleft   : 'top',    top   : 'top',    topright   : 'top',
@@ -29,7 +29,7 @@
                 this.config.truePlacement = this.config.placement;
                 this.config.placement = truePlacement2placement[this.config.truePlacement];
             }
-            
+
             //Original methods
             _show.apply(this, arguments);
 
