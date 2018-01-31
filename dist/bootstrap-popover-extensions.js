@@ -57,8 +57,8 @@
             }
 
             switch (sign) {
-                case +1: offset = `+50%p - ${arrowOffset}px`; break;
-                case -1: offset = `-50%p + ${arrowOffset}px`; break;
+                case +1: offset = '+50%p - ' + arrowOffset + 'px'; break;
+                case -1: offset = '-50%p + ' + arrowOffset + 'px'; break;
                 default: offset = 0;
             }
 
